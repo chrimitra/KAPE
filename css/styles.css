@@ -2,11 +2,18 @@
     box-sizing: content-box;
 }
 
+
+
 body {
     background-color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
 }
 
 header {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
     background-color: black;
 }
 
@@ -22,8 +29,12 @@ header {
 
 .nav-link {
     color: white;
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: rgb(105, 105, 105);
+    
 }
 
 .btn {
@@ -34,4 +45,24 @@ header {
 
 .color-text {
     color: white;
+}
+
+
+.main {
+    background-color: rgb(0, 0, 0);
+}
+
+.text-kape {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+}
+
+
+@media (max-width: 767.98px) { /* For devices less than 768px wide */
+    .small-device-image {
+        
+        max-width: 80%;
+    }
+    
 }
