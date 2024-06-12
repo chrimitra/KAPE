@@ -13,3 +13,10 @@ fetch('components/footer.html')
 })
 .catch(error => console.error('Error loading footer:', error));
 
+function goToMenu() {
+    window.location.href = "menu.html";
+}
+
+function viewCoffeePdf() {
+    window.open("../assets/pdf/menu_bbtea_price.pdf", "_blank");
+}
