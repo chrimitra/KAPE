@@ -168,8 +168,9 @@ body {
 
 @media (max-width: 767.98px) { /* For devices less than 768px wide */
     .small-device-image {
-        max-width: 80%;
+        max-width: 70%;
     }
+    
     
 }
 
