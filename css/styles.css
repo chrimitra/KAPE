@@ -5,12 +5,35 @@
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: rgb(0, 0, 0);
+
+.hero .d-flex {
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: For a darker overlay */
+    height: 35rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/mike-kenneally-TD4DBagg2wE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity value as needed */
+    z-index: 1;
 }
 
 .navbar {
@@ -37,10 +60,9 @@ header {
     
 }
 
-.btn {
-    background-color: white;
-    border: none;
-    color: black;
+.nav-btn {
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 .color-text {
@@ -58,11 +80,101 @@ header {
     color: white;
 }
 
+.ctr-follow-us {
+   background-color: black;
+}
+
+
+.hero-two {
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.hero-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/rene-porter-jFeLl1b4lG0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity value as needed */
+    z-index: 1;
+}
+
+.container {
+    height: 100%; /* Set height to 100% to make content center vertically */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.content p, .content button {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+
+.hero2-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.2  rem;
+}
+
+.hero-three .d-flex {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-three {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: For a darker overlay */
+    max-height: max-content;
+}
+
+.hero-three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/rosalind-chang-P_wPicZYoPI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity value as needed */
+    z-index: 1;
+}
+
+.small-device-image {
+    max-width: 80%; /* Adjust the percentage as needed */
+    height: auto;
+}
+
 
 @media (max-width: 767.98px) { /* For devices less than 768px wide */
     .small-device-image {
-        
         max-width: 80%;
     }
     
+}
+
+
+/* Menu Page */
+.header-menu {
+    background-color: white;
 }
